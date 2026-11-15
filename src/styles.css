@@ -1,0 +1,58 @@
+/* The fonts button in the Paint Editor. */
+
+.tw-paint-fonts-button {
+    flex: none;
+    margin-inline-end: .5rem;
+    padding: .375rem .625rem;
+    border: 1px solid var(--paint-ui-pane-border, #d9d9d9);
+    border-radius: .25rem;
+    background: var(--paint-input-background, #fff);
+    color: var(--paint-text-primary, #575e75);
+    font: inherit;
+    font-size: .875rem;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.tw-paint-fonts-button:hover {
+    background: var(--paint-looks-transparent, #855cd626);
+}
+
+.tw-paint-fonts-button:focus-visible {
+    outline: 2px solid var(--paint-looks-secondary, #855cd6);
+    outline-offset: 2px;
+}
+
+/* The web font dialogs. */
+
+.tw-web-font-dialog {
+    width: min(520px, 94vw);
+    background: var(--ui-modal-background, white);
+    color: var(--ui-modal-foreground, #263145);
+}
+
+.tw-web-font-dialog__body {
+    padding: 1rem;
+}
+
+.tw-web-font-dialog__form {
+    display: grid;
+    gap: .75rem;
+}
+
+.tw-web-font-dialog__form p {
+    margin: 0;
+}
+
+.tw-web-font-dialog__field {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.tw-web-font-dialog__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+}

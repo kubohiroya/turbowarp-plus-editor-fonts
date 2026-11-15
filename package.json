@@ -1,0 +1,56 @@
+{
+  "name": "@kubohiroya/turbowarp-plus-editor-fonts",
+  "version": "0.1.0",
+  "description": "Web fonts for TurboWarp Plus Editor: approve and load web fonts a project uses, the font dialogs, the Paint Editor fonts button, and fallbacks for packaged projects",
+  "type": "module",
+  "license": "MPL-2.0",
+  "author": "Hiroya Kubo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kubohiroya/turbowarp-plus-editor-fonts.git"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/web-fonts.d.ts",
+      "default": "./dist/web-fonts.js"
+    },
+    "./web-fonts": {
+      "types": "./dist/web-fonts.d.ts",
+      "default": "./dist/web-fonts.js"
+    },
+    "./web-font-dialogs": {
+      "types": "./dist/web-font-dialogs.d.ts",
+      "default": "./dist/web-font-dialogs.js"
+    },
+    "./paint-fonts-button": {
+      "types": "./dist/paint-fonts-button.d.ts",
+      "default": "./dist/paint-fonts-button.js"
+    },
+    "./styles.css": "./src/styles.css",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "src",
+    "tsconfig.json",
+    "README.md",
+    "README.ja.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test test/*.test.ts"
+  },
+  "peerDependencies": {
+    "react": ">=16.14",
+    "react-dom": ">=16.14"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "6.0.3"
+  }
+}
