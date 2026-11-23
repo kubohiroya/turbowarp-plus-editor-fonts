@@ -1,6 +1,6 @@
 {
   "name": "@kubohiroya/turbowarp-plus-editor-fonts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Web fonts for TurboWarp Plus Editor: approve and load web fonts a project uses, the font dialogs, the Paint Editor fonts button, and fallbacks for packaged projects",
   "type": "module",
   "license": "MPL-2.0",
